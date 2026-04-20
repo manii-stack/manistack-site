@@ -1,164 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - SRT AI Translator</title>
+    <title>Privacy Policy | SRT AI Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #202124;
-            --accent-color: #1a73e8;
-            --text-color: #3c4043;
-            --bg-color: #f8f9fa;
+            --bg-primary: #000000;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent: #ffffff;
+            --border: rgba(255, 255, 255, 0.1);
+            --glass: rgba(255, 255, 255, 0.03);
+            --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-inter);
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            padding: 40px 20px;
         }
 
         .container {
             max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(60,64,67,0.3);
+            margin: 0 auto;
+            background: var(--glass);
+            padding: 60px;
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
         }
 
         header {
-            border-bottom: 2px solid #eee;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 40px;
         }
 
         h1 {
-            color: var(--primary-color);
-            font-size: 28px;
-            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
         }
 
         .last-updated {
-            color: #70757a;
-            font-size: 14px;
-            margin-top: 10px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        section {
+            margin-bottom: 40px;
         }
 
         h2 {
-            color: var(--primary-color);
-            font-size: 20px;
-            margin-top: 30px;
-            border-left: 4px solid var(--accent-color);
-            padding-left: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
         }
 
-        p, li {
-            font-size: 16px;
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-weight: 300;
         }
 
         ul {
-            padding-left: 20px;
+            list-style: none;
+            margin-bottom: 20px;
         }
 
         li {
-            margin-bottom: 10px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            font-weight: 300;
         }
 
-        .highlight {
-            background-color: #e8f0fe;
-            padding: 15px;
-            border-radius: 4px;
-            border-left: 4px solid var(--accent-color);
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--text-primary);
         }
 
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 14px;
-            color: #70757a;
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
         }
 
         code {
-            background: #f1f3f4;
-            padding: 2px 5px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2px 6px;
             border-radius: 4px;
             font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            background: white;
+            color: black;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .highlight strong {
+            color: black;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 300;
         }
 
         @media (max-width: 600px) {
             .container {
-                margin: 20px;
-                padding: 20px;
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
             }
         }
     </style>
 </head>
+
 <body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy for SRT AI Translator</h1>
+            <p class="last-updated">Last Updated: April 20, 2026</p>
+        </header>
 
-<div class="container">
-    <header>
-        <h1>Privacy Policy for SRT AI Translator</h1>
-        <p class="last-updated">Last Updated: April 20, 2026</p>
-    </header>
+        <section>
+            <p>Mani Stack is committed to protecting your privacy. This Privacy Policy explains how our Chrome
+                Extension, <strong>SRT AI Translator</strong>, handles user data with transparency and security.</p>
+        </section>
 
-    <section>
-        <p>Mohammad Reza Sarmadi (Mani Dev) ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how our Chrome Extension, <strong>SRT AI Translator</strong>, handles user data with transparency and security.</p>
-    </section>
+        <div class="highlight">
+            <strong>Core Principle:</strong> We do NOT collect, store, or transmit any personal user data to any
+            external servers owned by the developer. Your data remains under your control at all times.
+        </div>
 
-    <div class="highlight">
-        <strong>Core Principle:</strong> We do NOT collect, store, or transmit any personal user data to any external servers owned by the developer. Your data remains under your control at all times.
+        <section>
+            <h2>1. Data Collection & Usage</h2>
+            <p>Our extension is designed to be as private as possible. We do not have a backend server to store your
+                information, subtitles, or personal identifiers.</p>
+        </section>
+
+        <section>
+            <h2>2. Sensitive Data Handling</h2>
+            <ul>
+                <li><strong>API Keys:</strong> The API keys (Google Gemini or OpenAI) you provide are stored locally on
+                    your device's secure browser storage (<code>chrome.storage.local</code>). They are only used to
+                    authenticate your requests directly with the respective AI providers.</li>
+                <li><strong>Subtitle Files:</strong> The content of the SRT files you upload is processed entirely
+                    within your browser environment. The text is sent directly to the AI provider you have selected for
+                    the sole purpose of translation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Third-Party Services</h2>
+            <p>This extension communicates directly with the following official API endpoints:</p>
+            <ul>
+                <li><strong>Google Gemini API</strong> (Google LLC)</li>
+                <li><strong>OpenAI API</strong> (OpenAI, L.L.C.)</li>
+            </ul>
+            <p>By using this extension, your subtitle text is subject to the privacy policies of the AI provider you
+                have configured in the settings.</p>
+        </section>
+
+        <section>
+            <h2>4. Chrome Permissions Justification</h2>
+            <ul>
+                <li><code>storage</code>: Required to save your preferences, such as UI theme, target language, and
+                    encrypted API keys locally on your machine.</li>
+                <li><code>host permissions</code>: Necessary to allow the extension to securely connect to official AI
+                    API servers for real-time translation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Changes to This Policy</h2>
+            <p>We may update this policy occasionally to reflect changes in our practices or for legal/regulatory
+                reasons. The "Last Updated" date at the top will indicate the latest revision.</p>
+        </section>
+
+        <section>
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions or concerns regarding this Privacy Policy, please feel free to reach out:</p>
+            <p><strong>Email:</strong> info@manistack.org</p>
+        </section>
+
+        <footer>
+            &copy; 2026 Mani Stack. All rights reserved.
+        </footer>
     </div>
-
-    <section>
-        <h2>1. Data Collection & Usage</h2>
-        <p>Our extension is designed to be as private as possible. We do not have a backend server to store your information, subtitles, or personal identifiers.</p>
-    </section>
-
-    <section>
-        <h2>2. Sensitive Data Handling</h2>
-        <ul>
-            <li><strong>API Keys:</strong> The API keys (Google Gemini or OpenAI) you provide are stored locally on your device's secure browser storage (<code>chrome.storage.local</code>). They are only used to authenticate your requests directly with the respective AI providers.</li>
-            <li><strong>Subtitle Files:</strong> The content of the SRT files you upload is processed entirely within your browser environment. The text is sent directly to the AI provider you have selected for the sole purpose of translation.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>3. Third-Party Services</h2>
-        <p>This extension communicates directly with the following official API endpoints:</p>
-        <ul>
-            <li><strong>Google Gemini API</strong> (Google LLC)</li>
-            <li><strong>OpenAI API</strong> (OpenAI, L.L.C.)</li>
-        </ul>
-        <p>By using this extension, your subtitle text is subject to the privacy policies of the AI provider you have configured in the settings.</p>
-    </section>
-
-    <section>
-        <h2>4. Chrome Permissions Justification</h2>
-        <ul>
-            <li><code>storage</code>: Required to save your preferences, such as UI theme, target language, and encrypted API keys locally on your machine.</li>
-            <li><code>host permissions</code>: Necessary to allow the extension to securely connect to official AI API servers for real-time translation.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>5. Changes to This Policy</h2>
-        <p>We may update this policy occasionally to reflect changes in our practices or for legal/regulatory reasons. The "Last Updated" date at the top will indicate the latest revision.</p>
-    </section>
-
-    <section>
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions or concerns regarding this Privacy Policy, please feel free to reach out:</p>
-        <p><strong>Email:</strong> [ایمیل خود را اینجا جایگزین کنید]</p>
-    </section>
-
-    <footer>
-        &copy; 2026 Mani Dev. All rights reserved.
-    </footer>
-</div>
-
 </body>
+
 </html>
