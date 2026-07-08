@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <script type="text/javascript">
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== '/') {
+          window.history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ManiStack | Full Stack Developer</title>
+    <meta name="description" content="Professional Full Stack Developer specializing in Chrome Extensions, PHP, and WordPress." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-ab5a14f7.js"></script>
+    <link rel="stylesheet" href="/assets/index-2c235c28.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>
